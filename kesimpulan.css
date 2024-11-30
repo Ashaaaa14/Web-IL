@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #b8b89d;
+}
+
+li, a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header{
+    background-color: #809671;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+ul.nav__links{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #002b5b;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgba(253, 140, 148, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(253, 140, 148, 0.8);
+}
+
+.dropdown-kerjasama, .dropdown-SDGs, .dropdown-hubungan, .dropdown-kesimpulan, .dropdown-daftar-pustaka{
+    position: relative;
+}
+
+.dropdown-kerjasama-content, .dropdown-SDGs-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fed674;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.dropdown-kerjasama-content a, .dropdown-SDGs-content a{
+    color: #FFF8CC;
+    background-color: #fed674;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-kerjasama-content a:hover, .dropdown-SDGs-content a:hover{
+    background-color: #facd65;
+}
+
+.dropdown-kerjasama:hover .dropdown-kerjasama-content, .dropdown-SDGs:hover .dropdown-SDGs-content{
+    display: block;
+}
+
+.container-kesimpulan{
+    font-family: 'Nunito';
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 250px;
+    margin: 50px;
+    background-color: #cbdfd8;
+    border-radius: 20px;
+}
+
+.container-kesimpulan h1{
+    color: #83a69c;
+}
+
+.content-kesimpulan{
+    margin-top: 20px;
+}
+
+.card-saran{
+    padding: 2em;
+    border-radius: 10px;
+    background-color: #cdad85;
+    text-align: center;
+}
+
+.container-saran{
+    font-family: 'Nunito';
+    padding: 20px;
+    margin: 50px;
+    margin-top: 300px;
+    background-color: #cbdfd8;
+    border-radius: 20px;
+}
+
+.container-saran h1{
+    color: #605f4b;
+}
+
+.card-saran h2{
+    font-size: 18px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.grid-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 10px;
+    justify-content: center;
+}
